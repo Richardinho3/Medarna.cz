@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://api.ssps.cajthaml.eu/file/64d9f18f79dad891e8a07c73">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="" href="honeyCombs.png">
+
+
+
+    <title>Medarna</title>
+    <!--coolors.co
+    fontawesome.com
+    cs.pattern.monster
+    https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
+    inspo slidoshowů, navbaru atd -> alza.cz 11teamsports.cz
+    http://developer.mozilla.org/en-US/docs/Web/CSS/flex
+    https://www.w3schools.com/Jsref/met_win_scrollby.asp
+    https://tailwindcss.com/docs/transition-timing-function
+    https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
+    https://www.w3schools.com/html/html_favicon.asp
+
+    -->
+    <style>
+        body {
+    font-family: "Inter", sans-serif;
+    background-color: #f6f7fb;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    background-image: url('pattern.svg'); 
+    background-repeat: repeat; 
+    background-size: auto; 
+
+    
+}
+header {
+    box-sizing: border-box;
+    width:80%;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3px;
+    padding:20px;
+    background-color: #f6f7fb;
+    box-sizing: border-box;
+    
+
+    
+
+    
+    
+}
+header h1 {
+    font-size: 2rem;
+    
+}
+img {
+    width:100px;
+    height:auto;
+    
+}
+form {
+    flex-grow:1;
+     
+    display: flex;
+    justify-content: center;
+}
+
+.searchContainer {
+    width:100%;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+    max-width: 350px;
+    height:40px;
+}
+.searchContainer input {
+    width: 100%;
+    max-width: 350px;
+    padding-left: 25px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    height: 40px;
+    
+
+}
+.searchContainer i {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.logoContainer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    max-width: 300px;
+    
+    
+}
+
+
+
+
+.iconsContainer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    max-width: 280px;
+    gap:20px;
+    
+    
+}
+.iconsContainer i {
+    font-size: 30px;
+}
+
+.logoContainer object {
+    color:#FFCD1F;
+    width:100px;
+    height:100px;
+}
+.vertDivider {
+    width:2px;
+    height:30px;
+    background-color: #000;
+    border-radius: 1px;
+}
+.aboutUs {
+    padding-right: 20px;
+}
+h1  span {
+    font-weight: 700;
+}
+nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    width:80%;
+    
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height:50px;
+    width:100%;
+}
+nav li {
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #1e1e1e;
+    color:white;
+    font-weight: 700;
+}
+main {
+    width:80%;
+    height:auto;
+    background-color: #f6f7fb;
+    padding:10px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    
+    
+    
+}
+
+.sliderContainer {
+    position: relative;
+    width: 100%;
+    height:auto;
+    
+    overflow: hidden;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.slider {
+    display: flex;
+    overflow-x:auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    padding: 10px;
+    width:100%;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+.product {
+    flex: 0 0 calc(100% / 4 - 20px);
+    height: 400px;
+    background: #f6f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    scroll-snap-align: start;
+    min-width: 300px;
+    font-weight: 600;
+    
+
+    
+}
+.product:hover {
+    
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}  
+.scrollBtnLeft, .scrollBtnRight {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background-color: transparent;
+color: #1E1E1E;
+border: none;
+cursor: pointer;
+padding: 10px 15px;
+font-size: 22px;
+border-radius: 5px;
+z-index:1;
+}
+
+.scrollBtnLeft:hover, .scrollBtnRight:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.15s ease;
+    
+}
+
+
+.scrollBtnLeft {
+    left:0px;
+}
+
+.scrollBtnRight {
+    right:0px;
+}
+
+.slider::-webkit-scrollbar {
+width: 12px;
+height: 12px;
+}
+
+.slider::-webkit-scrollbar-track {
+background: #f1f1f1;
+border-radius: 10px;
+}
+
+.slider::-webkit-scrollbar-thumb {
+background: #888;
+border-radius: 10px;
+}
+
+.slider::-webkit-scrollbar-thumb:hover {
+background: #555;
+}
+
+h2 {
+font-size: 30px;
+font-weight: 700;
+padding-left: 30px;
+padding-top: 30px;
+padding-bottom: 30px;
+}
+footer {
+width:80%;
+height:auto;
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+background-color: #f6f7fb;
+padding:20px;
+box-sizing: border-box;
+gap:50px;
+padding-bottom: 100px;
+}
+
+#brandInfo {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+width:80%;
+height: 100px;
+background-color: #f6f7fb;
+box-sizing: border-box;
+}
+#brandLogoFooter {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 15px;
+}
+#brandLogoFooter img {
+width: 50px;
+height: auto;
+}
+#brandLogoFooter span {
+font-weight: 700;
+}
+#brandLogoFooterSection {
+display:flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap:15px;
+
+}
+
+#aboutUsText{
+font-weight: 600;
+padding-bottom: 20px;
+}
+
+#CustomerServiceText{
+font-weight: 600;
+padding-bottom: 20px;
+}
+
+#aboutUsList {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 10px;
+}
+#customerServiceList {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 10px;
+}
+
+#brandInfoText {
+text-wrap: wrap;
+}
+
+footer article {
+flex:1;
+}
+header, nav, main, footer {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+h3,h4,h5 {
+    margin:5px;
+}
+h3 {
+    font-size: 34px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+h4 {
+    font-size: 20px;
+    color:#6C757D;
+    padding-bottom: 3px;
+}
+h5 {
+    font-size: 32px;
+}
+.product button {
+    box-sizing: border-box;
+    width:90%;
+    margin:5%;
+    
+    border:none;
+    background-color: #E5AC00;
+    color:white;
+    font-family: "Inter", sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+.product button:hover {
+    transform: scale(98%);
+    transition: all 0.1s ease;
+    
+}
+
+.akatovyMed >div {
+    background-image: url('pictures/med_akat_maly-removebg-preview.png');
+    
+}
+.medvidekTmavy >div {
+    background-image: url('pictures/medvidek_tmavy-removebg-preview.png');
+    
+}
+.vcelarskyKlobouk >div {
+    background-image: url('pictures/vcelarsky_klobouk-removebg-preview.png');
+    
+}
+
+.syto >div {
+    background-image: url('pictures/syto-removebg-preview.png');
+}
+.vidlickaNaOdvickovani >div {
+    background-image: url('pictures/vidlicka_na_odvickovani-removebg-preview.png');
+}
+.medvidekSvetly >div {
+    background-image: url('pictures/medvidek_svetly-removebg-preview.png');
+}
+.ochranneRukavice >div {
+    background-image: url('pictures/vcelarske_rukavice-removebg-preview.png');
+}
+.medomet >div {
+    background-image: url('pictures/medomet-removebg-preview.png');
+}
+.kartac >div {
+    background-image: url('pictures/kartac-removebg-preview.png');
+}
+.syto >div {
+    background-image: url('pictures/syto-removebg-preview.png');
+}
+.dymovnice >div {
+    background-image: url('pictures/dymovnice-removebg-preview.png');
+}
+.akatovyMedL >div {
+    background-image: url('pictures/med_akat-removebg-preview.png');
+}
+.lipovyMed >div {
+    background-image: url('pictures/med_lipovy-removebg-preview.png');
+}
+.medovicovyMed >div {
+    background-image: url('pictures/med_medovicovy-removebg-preview.png');
+}
+
+
+
+
+
+.photoContainer {
+    width: 95%;
+    height: 60%;
+    
+    
+    margin: 2.5%;
+    border-radius: 10px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+    </style>
+    <script>
+        function scrollSlider(sliderId, direction) {
+        const slider = document.querySelector(sliderId);
+        if (slider) {
+            slider.scrollBy({
+                left: direction * 1500,
+                behavior: 'smooth'
+            });
+        }
+}
+        
+        
+    </script>
+    
+</head>
+<body>
+    <header>
+        <div class = "logoContainer">
+            <img src="honeyCombs.png" alt="honey_comb">
+            <h1><span>Medárna</span>.cz</h1>
+        </div>
+
+        <form action="/action_page.php">
+            <div class = "searchContainer">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input type="text" placeholder="Search.." name="search" class="">
+            </div>
+        </form>
+        <div class = "iconsContainer">
+            <div class = "aboutUs">
+                <p>O nás</p>
+            </div>
+            <div class = "heartContainer">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class = "profileContainer">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class = "vertDivider"></div>
+            <div class = "cartContainer">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+        
+
+    </header>
+    <nav>
+        <ul>
+            <li>Domů</li>
+            <li>Medy</li>
+            <li>Produkty</li>
+            <li>Blog</li>
+            <li>Kontakt</li>
+        </ul>
+    </nav>
+    <main>
+        <div class = "popularProducts">
+            <h2>Populární produkty</h2>
+            <div class="sliderContainer">
+                <button class="scrollBtnLeft" onclick="scrollSlider('.slider', -1)">❮</button> 
+                
+                <div class="slider">
+                    <div class="product akatovyMed">
+                        <div class = "photoContainer"></div>
+                        <h3>Akátový  med</h3>
+                        <h4>250g</h4>
+                        <h5>239,-</h5>
+                        <button>Koupit</button>
+                    </div>
+                    <div class="product medvidekTmavy">
+                        <div class = "photoContainer"></div>
+                        <h3>Medvídek tmavý</h3>
+                        <h4>200g</h4>
+                        <h5>259,-</h5>
+                        <button>Koupit</button>
+                    </div>
+                    <div class="product vcelarskyKlobouk">
+                        <div class = "photoContainer"></div>
+                        <h3>Klobouk</h3>
+                        <h4>XL</h4>
+                        <h5>1199,-</h5>
+                        <button>Koupit</button>
+                    </div>
+                    <div class="product syto">
+                        <div class = "photoContainer"></div>
+                        <h3>Sýto</h3>
+                        <h4>Ø 205 mm</h4>
+                        <h5>648,-</h5>
+                        <button>Koupit</button>
+                    </div>
+                    <div class="product vidlickaNaOdvickovani">
+                        <div class = "photoContainer"></div>
+                        <h3>Vidlička</h3>
+                        <h4>na odvíčkování</h4>
+                        <h5>899,-</h5>
+                        <button>Koupit</button>
+                    </div>
+                    <div class="product medvidekSvetly">
+                        <div class = "photoContainer"></div>
+                        <h3>Medvídek světlý</h3>
+                        <h4>200g</h4>
+                        <h5>259,-</h5>
+                        <button>Koupit</button>
+                    </div>
+                </div>
+            
+                <button class="scrollBtnRight" onclick="scrollSlider('.slider', 1)">❯</button>
+            </div>
+        </div>
+        <div class = "honeyProducts">
+            <h2>Medy</h2>
+            <div class="sliderContainer">
+                <button class="scrollBtnLeft"  id = "scrollButtonLeft2"  onclick="scrollSlider('#slider2', -1)">❮</button>
+                
+                <div class="slider" id = "slider2">
+                    <div class="product akatovyMed">
+                        <div class = "photoContainer"></div>
+                        <h3>Akátový  med</h3>
+                        <h4>250g</h4>
+                        <h5>239,-</h5>
+                        <button>Koupit</button>
+                    </div>
+                    <div class="product akatovyMedL">
+                        <div class = "photoContainer"></div>
+                        <h3>Akátový  med</h3>
+                        <h4>500g</h4>
+                        <h5>449,-</h5>
+                        <button>Koupit</button>
+                    </div>
+                    <div class="product lipovyMed">
+                        <div class = "photoContainer"></div>
+                        <h3>Lipový  med</h3>
+                        <h4>500g</h4>
+                        <h5>449,-</h5>
+                        <button>Koupit</button>
+                    </div>
+                    <div class="product medovicovyMed">
+                        <div class = "photoContainer"></div>
+                        <h3>Medovicový  med</h3>
+                        <h4>500g</h4>
+                        <h5>479,-</h5>
+                        <button>Koupit</button>
+                    </div>
+                    <div class="product">
+                        <div class = "photoContainer"></div>
+                        <h3>Akátový  med</h3>
+                        <h4>250g</h4>
+                        <h5>239,-</h5>
+                        <button>Koupit</button>
+                    </div>
+                    <div class="product">
+                        <div class = "photoContainer"></div>
+                        <h3>Akátový  med</h3>
+                        <h4>250g</h4>
+                        <h5>239,-</h5>
+                        <button>Koupit</button>
+                    </div>
+                </div>
+            
+                <button class="scrollBtnRight" id = "scrollButtonRight2"  onclick="scrollSlider('#slider2', 1)">❯</button>
+            </div>
+        </div>
+        <div class = "Accessories">
+            <h2>Včelařské příslušenství</h2>
+            <div class="sliderContainer">
+                <button class="scrollBtnLeft"  id = "scrollButtonLeft3" onclick="scrollSlider('#slider3', -1)">❮</button>
+                
+                <div class="slider" id = "slider3">
+                    <div class="product vidlickaNaOdvickovani">
+                        <div class = "photoContainer "></div>
+                        <h3>Vidlička</h3>
+                        <h4>na odvíčkování</h4>
+                        <h5>899,-</h5>
+                        <button>Koupit</button>
+                    </div>
+                    <div class="product ochranneRukavice">
+                        <div class = "photoContainer"></div>
+                        <h3>Ochranné rukavice</h3>
+                        <h4>M</h4>
+                        <h5>799,-</h5>
+                        <button>Koupit</button>
+                    </div>
+                    <div class="product  medomet">
+                        <div class = "photoContainer"></div>
+                        <h3>Medomet</h3>
+                        <h4>1200 l</h4>
+                        <h5>7299,-</h5>
+                        <button>Koupit</button>
+                    </div>
+                    <div class="product kartac">
+                        <div class = "photoContainer "></div>
+                        <h3>Kartáč</h3>
+                        <h4>dřevěný</h4>
+                        <h5>299,-</h5>
+                        <button>Koupit</button>
+                    </div>
+                    <div class="product  syto">
+                        <div class = "photoContainer"></div>
+                        <h3>Sýto</h3>
+                        <h4>na odvíčkování</h4>
+                        <h5>899,-</h5>
+                        <button>Koupit</button>
+                    </div>
+                    <div class="product dymovnice">
+                        <div class = "photoContainer "></div>
+                        <h3>Dýmák</h3>
+                        <h4>nerezový</h4>
+                        <h5>699,-</h5>
+                        <button>Koupit</button>
+                    </div>
+                </div>
+            
+                <button class="scrollBtnRight" id = "scrollButtonRight3"  onclick="scrollSlider('#slider3', 1)">❯</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <article id = "brandInfo">
+            <section id = "brandLogoFooter">
+                <div id = "brandLogoFooterSection">
+                    <img src="honeyCombs.png" alt="honey_comb">
+                    <h3><span>Medárna</span>.cz</h3>
+                </div>
+                
+                <p id = "brandInfoText">Už více jak 10 let stáčíme přírodní, kvalitní med z hor Jeseníků.</p>
+            </section>
+        </article>
+        <article id ="aboutUsFooter">
+            <section><p id = "aboutUsText">O nás</p></section>
+            <section>
+                <ul id = "aboutUsList">
+                    <li>Historie</li>
+                    <li>Naše včely</li>
+                    <li>Naše produkty</li>
+                    <li>Blog</li>
+                </ul>
+            </section>
+        </article>
+        <article id = "customerServiceFooter">
+            <section><p id = "CustomerServiceText">Zákaznická podpora</p></section>
+            <section>
+                <ul id = "customerServiceList">
+                    <li>Kontakt</li>
+                    <li>Obchodní podmínky</li>
+                    <li>Doprava a platba</li>
+                    <li>Reklamace a vrácení zboží</li>
+                </ul>
+            </section>
+        </article>
+
+    </footer>
+
+</body>
+</html>
