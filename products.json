@@ -1,0 +1,108 @@
+[
+    {
+       "name" : "Akátový med" ,
+       "info" : "250g" ,
+       "price" : "239,-" ,
+       "img" : "pictures/med_akat-removebg-preview.png"
+
+    },
+    {
+        "name" : "Akátový med" ,
+        "info" : "500g" ,
+        "price" : "449,-" ,
+        "img" : "pictures/med_akatl-removebg-preview.png"
+ 
+     },
+     {
+        "name" : "Lipový med" ,
+        "info" : "500g" ,
+        "price" : "449,-" ,
+        "img" : "pictures/med_lipovy-removebg-preview.png"
+ 
+     },
+     {
+        "name" : "Medovicový med" ,
+        "info" : "500g" ,
+        "price" : "479,-" ,
+        "img" : "pictures/med_medovicovy-removebg-preview.png"
+ 
+     },
+     {
+        "name" : "Smíšený med" ,
+        "info" : "500g" ,
+        "price" : "479,-" ,
+        "img" : "pictures/med_smiseny-removebg-preview.png"
+ 
+     },
+     {
+        "name" : "Květový med pastový" ,
+        "info" : "500g" ,
+        "price" : "509,-" ,
+        "img" : "pictures/med_kvetovy_p-removebg-preview.png"
+ 
+     },
+     {
+        "name" : "Medvídek Tmavý" ,
+        "info" : "200g" ,
+        "price" : "259,-" ,
+        "img" : "pictures/medvidek_tmavy-removebg-preview.png"
+ 
+     },
+     {
+        "name" : "Klobouk" ,
+        "info" : "XL" ,
+        "price" : "1199,-" ,
+        "img" : "pictures/vcelarsky_klobouk-removebg-preview.png"
+ 
+     },
+     {
+        "name" : "Sýto" ,
+        "info" : "Ø 205 mm" ,
+        "price" : "648,-" ,
+        "img" : "pictures/syto-removebg-preview.png"
+ 
+     },
+     {
+        "name" : "Vidlička" ,
+        "info" : "na odvíčkování" ,
+        "price" : "899,-" ,
+        "img" : "pictures/vidlicka_na_odvickovani-removebg-preview.png"
+ 
+     },
+     {
+        "name" : "Medvidek světlý" ,
+        "info" : "200g" ,
+        "price" : "259,-" ,
+        "img" : "pictures/medvidek_svetly-removebg-preview.png"
+ 
+     },
+     {
+        "name" : "Ochranné rukavice" ,
+        "info" : "M" ,
+        "price" : "799,-" ,
+        "img" : "pictures/vcelarske_rukavice-removebg-preview.png"
+ 
+     },
+     {
+        "name" : "Medomet" ,
+        "info" : "500 l" ,
+        "price" : "7299,-" ,
+        "img" : "pictures/medomet-removebg-preview.png"
+ 
+     },
+     {
+        "name" : "Kartáč" ,
+        "info" : "dřevěný" ,
+        "price" : "299,-" ,
+        "img" : "pictures/kartac-removebg-preview.png"
+ 
+     },
+     {
+        "name" : "Dýmák" ,
+        "info" : "nerezový" ,
+        "price" : "699,-" ,
+        "img" : "pictures/dymovnice-removebg-preview.png"
+ 
+     }
+    
+]
