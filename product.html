@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="productStyles.css">
-    <script src="script.js"></script>
+    <script src="productScript.js"></script>
     <link rel="icon" type="" href="honeyCombs.png">
 
     <title>Medarna</title>
@@ -24,6 +24,10 @@
     https://tailwindcss.com/docs/transition-timing-function
     https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
     https://www.w3schools.com/html/html_favicon.asp
+    https://www.medovyobchod.sk/en/p/linden-honey-950g#
+    radí mi copilot
+    https://www.w3schools.com/css/css3_shadows_box.asp
+    -webkit-outer-spin-button
 
     -->
 </head>
@@ -76,11 +80,38 @@
                 
             </section>
             <section class = "productInfoContainer">   
-                <h2>Med z Jeseníků</h2>
-                <p>Med z Jeseníků je med, který je získáván z květů horských luk a lesů Jeseníků. Je to med s jemnou chutí a vůní, která je velmi příjemná. Med z Jeseníků je vhodný pro všechny věkové kategorie a je vhodný i pro děti. Med z Jeseníků je med, který je získáván z květů horských luk a lesů Jeseníků. Je to med s jemnou chutí a vůní, která je velmi příjemná. Med z Jeseníků je vhodný pro všechny věkové kategorie a je vhodný i pro děti.</p>
-                <div class = "productPriceContainer">
-                    <p>250 Kč</p>
-                    <button id = "addToCartButton">Přidat do košíku</button>
+                <h2>Akátový med</h2>
+                <p class = "productDescription">Med z Jeseníků je med, který je získáván z květů horských luk a lesů Jeseníků. Je to med s jemnou chutí a vůní, která je velmi příjemná. </p>
+                <div class="productRating">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="ratingText">4.5 (23 reviews)</span>
+                </div>
+                <div class = "productBuyingInfoContainer">
+                    <div class = "productPriceFavouriteContainer">
+                        <p class = "productPrice">250 Kč</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    
+                    <div class = "productPriceContainer">
+                        
+                        <div class = "amountSelector">
+
+                            <button class = "amountDecrease">-</button>
+                            <input type="number" value = "1" min = "1" max = "99" class = "amountInput">
+                            <button class = "amountIncrease">+</button>
+                        </div>
+                        <button id = "addToCartButton">Přidat do košíku</button>
+                </div>
+                    
+                    
+                    
+                    
                 </div>
             </section>
         </article>
