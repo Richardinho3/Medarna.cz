@@ -6,7 +6,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     
-    background-image: url('pattern.svg'); 
+    background-image: url('../pictures/pattern.svg'); 
     background-repeat: repeat; 
     background-size: auto; 
 
@@ -404,56 +404,56 @@ a {
 
 
 .akatovyMed >div {
-    background-image: url('pictures/med_akat_maly-removebg-preview.png');
+    background-image: url('../pictures/med_akat_maly-removebg-preview.png');
     
 }
 .medvidekTmavy >div {
-    background-image: url('pictures/medvidek_tmavy-removebg-preview.png');
+    background-image: url('../pictures/medvidek_tmavy-removebg-preview.png');
     
 }
 .vcelarskyKlobouk >div {
-    background-image: url('pictures/vcelarsky_klobouk-removebg-preview.png');
+    background-image: url('../pictures/vcelarsky_klobouk-removebg-preview.png');
     
 }
 
 .syto >div {
-    background-image: url('pictures/syto-removebg-preview.png');
+    background-image: url('../pictures/syto-removebg-preview.png');
 }
 .vidlickaNaOdvickovani >div {
-    background-image: url('pictures/vidlicka_na_odvickovani-removebg-preview.png');
+    background-image: url('../pictures/vidlicka_na_odvickovani-removebg-preview.png');
 }
 .medvidekSvetly >div {
-    background-image: url('pictures/medvidek_svetly-removebg-preview.png');
+    background-image: url('../pictures/medvidek_svetly-removebg-preview.png');
 }
 .ochranneRukavice >div {
-    background-image: url('pictures/vcelarske_rukavice-removebg-preview.png');
+    background-image: url('../pictures/vcelarske_rukavice-removebg-preview.png');
 }
 .medomet >div {
-    background-image: url('pictures/medomet-removebg-preview.png');
+    background-image: url('../pictures/medomet-removebg-preview.png');
 }
 .kartac >div {
-    background-image: url('pictures/kartac-removebg-preview.png');
+    background-image: url('../pictures/kartac-removebg-preview.png');
 }
 .syto >div {
-    background-image: url('pictures/syto-removebg-preview.png');
+    background-image: url('../pictures/syto-removebg-preview.png');
 }
 .dymovnice >div {
-    background-image: url('pictures/dymovnice-removebg-preview.png');
+    background-image: url('../pictures/dymovnice-removebg-preview.png');
 }
 .akatovyMedL >div {
-    background-image: url('pictures/med_akatl-removebg-preview.png');
+    background-image: url('../pictures/med_akatl-removebg-preview.png');
 }
 .lipovyMed >div {
-    background-image: url('pictures/med_lipovy-removebg-preview.png');
+    background-image: url('../pictures/med_lipovy-removebg-preview.png');
 }
 .medovicovyMed >div {
-    background-image: url('pictures/med_medovicovy-removebg-preview.png');
+    background-image: url('../pictures/med_medovicovy-removebg-preview.png');
 }
 .smisenyMed >div {
-    background-image: url('pictures/med_smiseny-removebg-preview.png');
+    background-image: url('../pictures/med_smiseny-removebg-preview.png');
 }
 .kvetovyMedP > div {
-    background-image: url('pictures/med_kvetovy_p-removebg-preview.png');
+    background-image: url('../pictures/med_kvetovy_p-removebg-preview.png');
 }
 
 
