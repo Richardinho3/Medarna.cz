@@ -17,4 +17,23 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
     });
+
+    const heartIcon = document.querySelector('.fa-heart');
+    const emptyHeartIcon = document.querySelector('.fa-regular.fa-heart');
+    
+    
+    if (emptyHeartIcon) {
+        emptyHeartIcon.addEventListener('click', function() {
+            
+            if (this.classList.contains('fa-regular')) {
+                this.classList.remove('fa-regular');
+                this.classList.add('fa-solid');
+                this.style.color = '#ff0000'; 
+            } else {
+                this.classList.remove('fa-solid');
+                this.classList.add('fa-regular');
+                this.style.color = ''; 
+            }
+        });
+    }
 });
