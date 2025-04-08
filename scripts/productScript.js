@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     });
 
+
     const heartIcon = document.querySelector('.fa-heart');
     const emptyHeartIcon = document.querySelector('.fa-regular.fa-heart');
     
@@ -28,12 +29,28 @@ document.addEventListener('DOMContentLoaded', function() {
             if (this.classList.contains('fa-regular')) {
                 this.classList.remove('fa-regular');
                 this.classList.add('fa-solid');
-                this.style.color = '#ff0000'; 
+                this.style.color = '#e63946'; 
             } else {
                 this.classList.remove('fa-solid');
                 this.classList.add('fa-regular');
-                this.style.color = ''; 
+                this.style.color = '#e63946'; 
             }
         });
     }
+
+
+    const productPicture = document.querySelector('.productSoleImageContainer');
+    const popupBackground = document.querySelector('.productImagePopupBackground');
+    const closePopupButton = document.querySelector('.closePopupButton');
+    
+    productPicture.addEventListener('click', function() {
+        popupBackground.style.display = 'flex';
+
+        
+    });
+
+    closePopupButton.addEventListener('click', function() {
+        
+        popupBackground.style.display = 'none';
+    });
 });

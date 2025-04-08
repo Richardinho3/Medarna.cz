@@ -29,15 +29,18 @@
     https://www.w3schools.com/css/css3_shadows_box.asp
     -webkit-outer-spin-button
     https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-slider-thumb
+    https://codepen.io/imprakash/pen/GgNMXO
 
     -->
 </head>
 <body>
     <header>
-        <div class = "logoContainer">
-            <img src="pictures/honeyCombs.png" alt="honey_comb">
-            <h1><span>Medárna</span>.cz</h1>
-        </div>
+        <a href="index.html">
+            <div class = "logoContainer">
+                <img src="pictures/honeyCombs.png" alt="honey_comb">
+                <h1><span>Medárna</span>.cz</h1>
+            </div>
+        </a>
 
         <form action="/action_page.php">
             <div class = "searchContainer">
@@ -74,6 +77,15 @@
         </ul>
     </nav>
     <main>
+        <article class = "productImagePopupBackground">
+            <section class ="productImagePopup">
+                <button  class = "closePopupButton">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="popupContent"></div>
+            </section>
+            
+        </article>
         <article>
             
             <section class = "productImageContainer">

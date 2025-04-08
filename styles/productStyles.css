@@ -79,9 +79,21 @@ form {
     justify-content: center;
     gap:20px;
     max-width: 300px;
+
+    text-decoration: none !important;
+    
     
     
 }
+
+
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+
 
 
 
@@ -567,4 +579,67 @@ article:last-child {
 
 .fa-heart {
     font-size: 30px;
+    
+}
+
+.productPriceFavouriteContainer >i.fa-heart {
+    color: #E63946;
+    
+    cursor: pointer;
+}
+
+article.productImagePopupBackground {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 587;
+    display:none;
+}
+
+section.productImagePopup {
+    box-sizing: border-box;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    max-height: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    left:0;
+    top:0;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0, 0.08);
+    overflow: hidden;
+}
+
+button.closePopupButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+}
+
+div.popupContent {
+    padding:0px;
+    width:100%;
+    height: 100%;
+    background-image: url("../pictures/med_akat_maly-removebg-preview.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    
 }
