@@ -643,3 +643,7 @@ div.popupContent {
 
     
 }
+
+nav > ul > li {
+    cursor: pointer;
+}

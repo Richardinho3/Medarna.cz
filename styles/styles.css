@@ -479,3 +479,7 @@ i:hover {
     transform: scale(0.9);
     transition: 0.1s ease;
 }
+
+nav > ul > li {
+    cursor: pointer;
+}
