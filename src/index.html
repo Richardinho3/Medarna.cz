@@ -29,6 +29,8 @@
     https://www.w3schools.com/cssref/css3_pr_box-shadow.php
     gpt prompt : get info from a html element, and use it on another html page. Eg. get content of a H1 element upon clicking a button and when it routes me another page, i can view the info of the h1 element
     tvorba popisů produktů pomoci chatgpt
+    https://www.w3schools.com/jsref/jsref_parseint.asp
+    logiku hvězdiček jsem zkrátil s pomocí ai (aby to nebylo 5 ifů)
     -->
    
     
@@ -87,7 +89,7 @@
                         <h3>Akátový  med</h3>
                         <h4>250g</h4>
                         <h5>239,-</h5>
-                        <a href="./product.html" onclick = "saveProductInfo(event, 'Akátový med', '250g', '239,-')">
+                        <a href="./product.html" onclick = "saveProductInfo(event, 'Akátový med', '250g', '239,-', '5', '87')">
                             <button>Koupit</button>
                         </a>
                     </div>
@@ -96,7 +98,7 @@
                         <h3>Medvídek tmavý</h3>
                         <h4>200g</h4>
                         <h5>259,-</h5>
-                        <a href="./product.html" onclick = "saveProductInfo(event, 'Medvídek tmavý', '200g', '259,-')">
+                        <a href="./product.html" onclick = "saveProductInfo(event, 'Medvídek tmavý', '200g', '259,-', '4.8', '54')">
                             <button>Koupit</button>
                         </a>
                     </div>
@@ -105,7 +107,7 @@
                         <h3>Klobouk</h3>
                         <h4>XL</h4>
                         <h5>1199,-</h5>
-                        <a href="./product.html" onclick = "saveProductInfo(event, 'Klobouk', 'XL', '1199,-')">
+                        <a href="./product.html" onclick = "saveProductInfo(event, 'Klobouk', 'XL', '1199,-', '4.2', '32')">
                             <button>Koupit</button>
                         </a>
                     </div>
@@ -114,7 +116,7 @@
                         <h3>Sýto</h3>
                         <h4>Ø 205 mm</h4>
                         <h5>648,-</h5>
-                        <a href="./product.html" onclick = "saveProductInfo(event, 'Sýto', 'Ø 205 mm', '648,-')">
+                        <a href="./product.html" onclick = "saveProductInfo(event, 'Sýto', 'Ø 205 mm', '648,-', '4.5', '4')">
                             <button>Koupit</button>
                         </a>
                     </div>
@@ -123,7 +125,7 @@
                         <h3>Vidlička</h3>
                         <h4>na odvíčkování</h4>
                         <h5>899,-</h5>
-                        <a href="./product.html" onclick = "saveProductInfo(event, 'Vidlička', 'na odvíčkování', '899,-')">
+                        <a href="./product.html" onclick = "saveProductInfo(event, 'Vidlička', 'na odvíčkování', '899,-', '5', '18')">
                             <button>Koupit</button>
                         </a>
                     </div>
@@ -132,7 +134,7 @@
                         <h3>Medvídek světlý</h3>
                         <h4>200g</h4>
                         <h5>259,-</h5>
-                        <a href="./product.html" onclick = "saveProductInfo(event, 'Medvídek světlý', '200g', '259,-')">
+                        <a href="./product.html" onclick = "saveProductInfo(event, 'Medvídek světlý', '200g', '259,-', '3.7', '67')">
                             <button>Koupit</button>
                         </a>
                     </div>
@@ -152,7 +154,7 @@
                         <h3>Akátový  med</h3>
                         <h4>250g</h4>
                         <h5>239,-</h5>
-                        <a href="./product.html" onclick = "saveProductInfo(event, 'Akátový med', '250g', '239,-')">
+                        <a href="./product.html" onclick = "saveProductInfo(event, 'Akátový med', '250g', '239,-', '5', '87')">
                             <button>Koupit</button>
                         </a>
                     </div>
@@ -161,7 +163,7 @@
                         <h3>Akátový  med</h3>
                         <h4>500g</h4>
                         <h5>449,-</h5>
-                        <a href="./product.html" onclick = "saveProductInfo(event, 'Akátový med', '500g', '449,-')">
+                        <a href="./product.html" onclick = "saveProductInfo(event, 'Akátový med', '500g', '449,-', '4.9', '45')">
                             <button>Koupit</button>
                         </a>
                     </div>
@@ -170,7 +172,7 @@
                         <h3>Lipový  med</h3>
                         <h4>500g</h4>
                         <h5>449,-</h5>
-                        <a href="./product.html" onclick = "saveProductInfo(event, 'Lipový med', '500g', '449,-')">
+                        <a href="./product.html" onclick = "saveProductInfo(event, 'Lipový med', '500g', '449,-', '4.2', '11')">
                             <button>Koupit</button>
                         </a>
                     </div>
@@ -179,7 +181,7 @@
                         <h3>Medovicový  med</h3>
                         <h4>500g</h4>
                         <h5>479,-</h5>
-                        <a href="./product.html" onclick = "saveProductInfo(event, 'Medovicový med', '500g', '479,-')">
+                        <a href="./product.html" onclick = "saveProductInfo(event, 'Medovicový med', '500g', '479,-', '4', '9')">
                             <button>Koupit</button>
                         </a>
                     </div>
@@ -188,7 +190,7 @@
                         <h3>Smíšený  med</h3>
                         <h4>500g</h4>
                         <h5>479,-</h5>
-                        <a href="./product.html" onclick = "saveProductInfo(event, 'Smíšený med', '500g', '479,-')">
+                        <a href="./product.html" onclick = "saveProductInfo(event, 'Smíšený med', '500g', '479,-', '4.4', '16')">
                             <button>Koupit</button>
                         </a>
                     </div>
@@ -197,7 +199,7 @@
                         <h3>Květový  med pastový</h3>
                         <h4>500g</h4>
                         <h5>509,-</h5>
-                        <a href="./product.html" onclick = "saveProductInfo(event, 'Květový med pastový', '500g', '509,-')">
+                        <a href="./product.html" onclick = "saveProductInfo(event, 'Květový med pastový', '500g', '509,-', '4', '41')">
                             <button>Koupit</button>
                         </a>
                     </div>
@@ -217,7 +219,7 @@
                         <h3>Vidlička</h3>
                         <h4>na odvíčkování</h4>
                         <h5>899,-</h5>
-                        <a href="./product.html" onclick = "saveProductInfo(event, 'Vidlička', 'na odvíčkování', '899,-')">
+                        <a href="./product.html" onclick = "saveProductInfo(event, 'Vidlička', 'na odvíčkování', '899,-', '5', '18')">
                             <button>Koupit</button>
                         </a>
                     </div>
@@ -226,7 +228,7 @@
                         <h3>Ochranné rukavice</h3>
                         <h4>M</h4>
                         <h5>799,-</h5>
-                        <a href="./product.html" onclick = "saveProductInfo(event, 'Ochranné rukavice', 'M', '799,-')">
+                        <a href="./product.html" onclick = "saveProductInfo(event, 'Ochranné rukavice', 'M', '799,-', '4', '22')">
                             <button>Koupit</button>
                         </a>
                     </div>
@@ -235,7 +237,7 @@
                         <h3>Medomet</h3>
                         <h4>500 l</h4>
                         <h5>7299,-</h5>
-                        <a href="./product.html" onclick = "saveProductInfo(event, 'Medomet', '500 l', '7299,-')">
+                        <a href="./product.html" onclick = "saveProductInfo(event, 'Medomet', '500 l', '7299,-', '2.9', '7')">
                             <button>Koupit</button>
                         </a>
                     </div>
@@ -244,7 +246,7 @@
                         <h3>Kartáč</h3>
                         <h4>dřevěný</h4>
                         <h5>299,-</h5>
-                        <a href="./product.html" onclick = "saveProductInfo(event, 'Kartáč', 'dřevěný', '299,-')">
+                        <a href="./product.html" onclick = "saveProductInfo(event, 'Kartáč', 'dřevěný', '299,-', '3.8', '86')">
                             <button>Koupit</button>
                         </a>
                     </div>
@@ -253,7 +255,7 @@
                         <h3>Sýto</h3>
                         <h4>Ø 205 mm</h4>
                         <h5>899,-</h5>
-                        <a href="./product.html" onclick = "saveProductInfo(event, 'Sýto', 'Ø 205 mm', '899,-')">
+                        <a href="./product.html" onclick = "saveProductInfo(event, 'Sýto', 'Ø 205 mm', '899,-', '0.8', '4')">
                             <button>Koupit</button>
                         </a>
                     </div>
@@ -262,7 +264,7 @@
                         <h3>Dýmák</h3>
                         <h4>nerezový</h4>
                         <h5>699,-</h5>
-                        <a href="./product.html" onclick = "saveProductInfo(event, 'Dýmák', 'nerezový', '699,-')">
+                        <a href="./product.html" onclick = "saveProductInfo(event, 'Dýmák', 'nerezový', '699,-', '2.7', '31')">
                             <button>Koupit</button>
                         </a>
                     </div>

@@ -68,7 +68,11 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("productName").innerText = productInfo.name;
     document.getElementById("productWeight").innerText = productInfo.weight;
     document.getElementById("productPrice").innerText = productInfo.price;
+    document.getElementById("productRating").innerText = productInfo.rating;
+    document.getElementById("productRatingCount").innerText = "  (" + productInfo.ratingCount + " hodnocení)";
 
+    
+     
     
     fetch("../data/products.json")
         .then(response => {
@@ -104,14 +108,34 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 descriptionElement.innerText = "Produkt nebyl nalezen v jsonu.";
             }
+
+            // Corrected star rating logic
+            const ratingInt = parseFloat(productInfo.rating ?? "0");
+            const starElements = document.querySelectorAll('.stars i');
+
+            if (starElements.length > 0) {
+                starElements.forEach((star, index) => {
+                    star.classList.remove('fa-solid', 'fa-star', 'fa-regular', 'fa-star-half-alt');
+
+                    if (index < Math.floor(ratingInt)) {
+                        star.classList.add('fa-solid', 'fa-star'); 
+                    } else if (index === Math.floor(ratingInt) && ratingInt % 1 !== 0) {
+                        star.classList.add('fa-solid', 'fa-star-half-alt'); 
+                    } else {
+                        star.classList.add('fa-regular', 'fa-star'); 
+                    }
+                });
+            }
         })
         .catch(error => {
             
             document.getElementById("productDescription").innerText = "Chyba s popiskem.";
         });
+
+
 });
 
-        
+
 
 
 
