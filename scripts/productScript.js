@@ -54,13 +54,65 @@ document.addEventListener('DOMContentLoaded', function() {
         popupBackground.style.display = 'none';
     });
 
+
+
+
     const productInfo = JSON.parse(localStorage.getItem("selectedProduct"));
 
-        if (productInfo) {
-            document.getElementById("productName").innerText = productInfo.name;
-            document.getElementById("productWeight").innerText = productInfo.weight;
-            document.getElementById("productPrice").innerText = productInfo.price;
-        } else {
-            document.getElementById("productName").innerText = "Produkt nenalezen";
-        }
+    if (!productInfo) {
+        document.getElementById("productName").innerText = "Produkt nenalezen";
+        return;
+    }
+
+    
+    document.getElementById("productName").innerText = productInfo.name;
+    document.getElementById("productWeight").innerText = productInfo.weight;
+    document.getElementById("productPrice").innerText = productInfo.price;
+
+    
+    fetch("../data/products.json")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }
+            return response.json();
+        })
+        .then(data => {
+            
+            
+            
+            const product = data.find(p => p.name === productInfo.name);
+            
+            
+
+            const descriptionElement = document.getElementById("productDescription");
+            const productImage = document.querySelector('.productSoleImageContainer');
+            const popupImage = document.querySelector('.popupContent');
+
+            if (product) {
+                if (product.description) {
+                    descriptionElement.innerText = product.description;
+                }
+                
+                // Jestli existuje obrazek v jsonu , setne ho 
+                if (product.img) {
+                    const imgPath = `../${product.img}`;
+                    
+                    if (productImage) productImage.style.backgroundImage = `url('${imgPath}')`;
+                    if (popupImage) popupImage.style.backgroundImage = `url('${imgPath}')`;
+                }
+            } else {
+                descriptionElement.innerText = "Produkt nebyl nalezen v jsonu.";
+            }
+        })
+        .catch(error => {
+            
+            document.getElementById("productDescription").innerText = "Chyba s popiskem.";
+        });
 });
+
+        
+
+
+
+

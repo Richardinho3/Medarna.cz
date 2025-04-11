@@ -739,3 +739,8 @@ div.popupContent {
 nav > ul > li {
     cursor: pointer;
 }
+
+#productWeight {
+    font-size: 26px;
+    font-weight: 700;
+}

@@ -3,105 +3,120 @@
        "name" : "Akátový med" ,
        "info" : "250g" ,
        "price" : "239,-" ,
-       "img" : "pictures/med_akat-removebg-preview.png"
+       "img" : "../pictures/med_akat-removebg-preview.png",
+       "description" : " Tento jemný, světlý med pochází z květů akátu a vyniká svou lehkou, sladkou chutí. Je ideální pro dochucení čajů, pečiva nebo jen tak na lžičku."
 
     },
     {
         "name" : "Akátový med" ,
         "info" : "500g" ,
         "price" : "449,-" ,
-        "img" : "pictures/med_akatl-removebg-preview.png"
+        "img" : "../pictures/med_akatl-removebg-preview.png",
+        "description" :" Tento jemný, světlý med pochází z květů akátu a vyniká svou lehkou, sladkou chutí. Je ideální pro dochucení čajů, pečiva nebo jen tak na lžičku."
  
      },
      {
         "name" : "Lipový med" ,
         "info" : "500g" ,
         "price" : "449,-" ,
-        "img" : "pictures/med_lipovy-removebg-preview.png"
+        "img" : "../pictures/med_lipovy-removebg-preview.png",
+        "description" : "Lipový med má výraznou květinovou vůni a mírně kořeněnou chuť. Je skvělý pro posílení imunity a při nachlazení."
  
      },
      {
         "name" : "Medovicový med" ,
         "info" : "500g" ,
         "price" : "479,-" ,
-        "img" : "pictures/med_medovicovy-removebg-preview.png"
+        "img" : "../pictures/med_medovicovy-removebg-preview.png",
+        "description" : "Tento tmavý med má bohatou, karamelovou chuť s jemným nádechem pryskyřice. Obsahuje vysoký podíl minerálů a je oblíbený pro své léčivé vlastnosti."
  
      },
      {
         "name" : "Smíšený med" ,
         "info" : "500g" ,
         "price" : "479,-" ,
-        "img" : "pictures/med_smiseny-removebg-preview.png"
+        "img" : "pictures/med_smiseny-removebg-preview.png",
+        "description" : "Med s jedinečnou harmonii chutí. Je to skvělá volba pro každodenní použití v kuchyni."
  
      },
      {
         "name" : "Květový med pastový" ,
         "info" : "500g" ,
         "price" : "509,-" ,
-        "img" : "pictures/med_kvetovy_p-removebg-preview.png"
+        "img" : "pictures/med_kvetovy_p-removebg-preview.png",
+        "description" : "Pastový med je jemně krémový a snadno roztíratelný. Díky speciálnímu šlehání si zachovává svou kvalitu a lahodnou chuť."
  
      },
      {
-        "name" : "Medvídek Tmavý" ,
+        "name" : "Medvídek tmavý" ,
         "info" : "200g" ,
         "price" : "259,-" ,
-        "img" : "pictures/medvidek_tmavy-removebg-preview.png"
+        "img" : "pictures/medvidek_tmavy-removebg-preview.png",
+        "description" : "Tmavý med ve tvaru medvídka je nejen chutný, ale i zábavný pro děti. Sladká a jemná chuť je ideální do čaje nebo na pečivo."
  
      },
      {
         "name" : "Klobouk" ,
         "info" : "XL" ,
         "price" : "1199,-" ,
-        "img" : "pictures/vcelarsky_klobouk-removebg-preview.png"
+        "img" : "pictures/vcelarsky_klobouk-removebg-preview.png",
+        "description" : "Včelařský klobouk poskytuje maximální ochranu před včelími bodnutími. Pohodlný a lehký design umožňuje snadnou manipulaci při práci se včelami."
  
      },
      {
         "name" : "Sýto" ,
         "info" : "Ø 205 mm" ,
         "price" : "648,-" ,
-        "img" : "pictures/syto-removebg-preview.png"
+        "img" : "pictures/syto-removebg-preview.png",
+        "description" : "Kovové sýto na med slouží k odstranění nečistot a voskových částic. Zajišťuje čistotu a kvalitu medu při stáčení."
  
      },
      {
         "name" : "Vidlička" ,
         "info" : "na odvíčkování" ,
         "price" : "899,-" ,
-        "img" : "pictures/vidlicka_na_odvickovani-removebg-preview.png"
+        "img" : "pictures/vidlicka_na_odvickovani-removebg-preview.png",
+        "description" : "Tato speciální vidlička umožňuje snadné odstranění voskových víček z medových plástů. Ergonomická rukojeť usnadňuje práci i při větším množství plástů."
  
      },
      {
-        "name" : "Medvidek světlý" ,
+        "name" : "Medvídek světlý" ,
         "info" : "200g" ,
         "price" : "259,-" ,
-        "img" : "pictures/medvidek_svetly-removebg-preview.png"
+        "img" : "pictures/medvidek_svetly-removebg-preview.png",
+        "description" : "Světlý med ve tvaru medvídka je nejen chutný, ale i zábavný pro děti. Sladká a jemná chuť je ideální do čaje nebo na pečivo."
  
      },
      {
         "name" : "Ochranné rukavice" ,
         "info" : "M" ,
         "price" : "799,-" ,
-        "img" : "pictures/vcelarske_rukavice-removebg-preview.png"
+        "img" : "pictures/vcelarske_rukavice-removebg-preview.png",
+        "description": "Včelařské rukavice z pevného materiálu chrání ruce před bodnutím. Jsou prodyšné a pohodlné i při dlouhém nošení."
  
      },
      {
         "name" : "Medomet" ,
         "info" : "500 l" ,
         "price" : "7299,-" ,
-        "img" : "pictures/medomet-removebg-preview.png"
+        "img" : "pictures/medomet-removebg-preview.png",
+        "description" : "Tento nerezový medomet umožňuje efektivní vytáčení medu z plástů. Je ideální pro začínající i profesionální včelaře."
  
      },
      {
         "name" : "Kartáč" ,
         "info" : "dřevěný" ,
         "price" : "299,-" ,
-        "img" : "pictures/kartac-removebg-preview.png"
+        "img" : "pictures/kartac-removebg-preview.png",
+        "description" : "Jemný kartáč na odstraňování včel z plástů bez jejich poškození. Přírodní dřevěná rukojeť zajišťuje pohodlný úchop."
  
      },
      {
         "name" : "Dýmák" ,
         "info" : "nerezový" ,
         "price" : "699,-" ,
-        "img" : "pictures/dymovnice-removebg-preview.png"
+        "img" : "pictures/dymovnice-removebg-preview.png",
+        "description" : "Dýmák pomáhá uklidnit včely při práci s úlem. Vyrobený z odolné nerezové oceli pro dlouhou životnost."
  
      }
     
