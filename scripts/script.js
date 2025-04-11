@@ -9,8 +9,12 @@
         }
 }
 
-
-
+function saveProductInfo(event, name, weight, price) {
+    event.preventDefault(); 
+    const productInfo = { name, weight, price };
+    localStorage.setItem("selectedProduct", JSON.stringify(productInfo));
+    window.location.href = "./product.html"; 
+}
         
 
    

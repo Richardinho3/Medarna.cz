@@ -194,7 +194,7 @@ div.footerContainer {
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     background-color: #f6f7fb;
     padding: 20px;

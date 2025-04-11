@@ -53,4 +53,14 @@ document.addEventListener('DOMContentLoaded', function() {
         
         popupBackground.style.display = 'none';
     });
+
+    const productInfo = JSON.parse(localStorage.getItem("selectedProduct"));
+
+        if (productInfo) {
+            document.getElementById("productName").innerText = productInfo.name;
+            document.getElementById("productWeight").innerText = productInfo.weight;
+            document.getElementById("productPrice").innerText = productInfo.price;
+        } else {
+            document.getElementById("productName").innerText = "Produkt nenalezen";
+        }
 });
