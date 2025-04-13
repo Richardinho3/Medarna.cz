@@ -20,7 +20,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-radius: 3px;
+    
     padding:20px;
     background-color: #f6f7fb;
     box-sizing: border-box;
