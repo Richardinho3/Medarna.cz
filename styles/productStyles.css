@@ -745,3 +745,13 @@ nav > ul > li {
     font-size: 26px;
     font-weight: 600;
 }
+
+a {
+    text-decoration: none;
+    
+}
+
+nav> ul >a {
+    height:100%;
+    width:100%;
+}

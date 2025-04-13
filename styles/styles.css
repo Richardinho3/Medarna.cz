@@ -586,4 +586,11 @@ ul {
 }
 
 
+a {
+    text-decoration: none;
+    
+}
 
+nav> ul >a {
+    height:100%;
+}
