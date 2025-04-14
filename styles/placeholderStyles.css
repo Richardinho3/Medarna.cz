@@ -11,6 +11,9 @@ body {
     background-repeat: no-repeat; 
     background-position: center;
     background-size:cover; 
+
+    
+    background-size: cover;
 }
 
 h1 {
@@ -28,3 +31,9 @@ a {
     font-size: 0.9em;
 }
 
+@media (max-width: 1110px) {
+    body {
+        background-image :none;
+        background-color: #fff;
+    }
+}
