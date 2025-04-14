@@ -2,4 +2,4 @@
 
 <p id="description">Website design of a honey product store</p>
 
-<p>Availible on richardinho3.github.io</p>
+<p>Availible on richardinho3.github.io/src/index.html</p>
