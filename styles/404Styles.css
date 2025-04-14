@@ -1,0 +1,50 @@
+body {
+    font-family: "Inter", sans-serif;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background-image: url('../pictures/beeBackgroundPlaceholder.svg'); 
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size:cover; 
+
+    
+    background-size: cover;
+}
+
+h1 {
+    font-size: 4em;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.7rem;
+}
+
+h3 {font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    text-decoration: underline;
+    font-size: 0.9em;
+}
+
+@media (max-width: 1110px) {
+    body {
+        background-image :none;
+        background-color: #fff;
+    }
+}
