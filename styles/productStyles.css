@@ -755,3 +755,20 @@ nav> ul >a {
     height:100%;
     width:100%;
 }
+
+.iconsContainer >a {
+    width:fit-content;
+    padding: 0px;
+}
+
+#aboutUsHeaderContainer:hover {
+    font-weight: 600;
+    transition: 0.1s ease;
+}
+
+
+
+.heartContainer, .profileContaier, .cartContainer {
+    padding:0px;
+    width:fit-content;
+}
