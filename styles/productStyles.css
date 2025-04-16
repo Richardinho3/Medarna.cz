@@ -896,3 +896,109 @@ button.closePopupButtonLiked {
     color: #333;
     cursor: pointer;
 }
+
+
+
+
+
+article.boughtProductPopupBackground {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 586;
+    
+    
+}
+
+section.boughtProductPopup {
+    box-sizing: border-box;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    max-height: 400px;
+    
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    left:0;
+    top:0;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0, 0.08);
+    padding:20px;
+    gap:20px;
+    overflow: hidden;
+    display:flex;
+    flex:1;
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+
+
+
+div.boughtPopupContentImage {
+    padding:0px;
+    width:100%;
+    height: 100%;
+    background-image: url("../pictures/med_akat_maly-removebg-preview.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1.5;
+
+    
+}
+
+div.boughtPopupContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+
+    
+}
+
+.boughtPopupContent h4 {
+    font-size: 20px;
+    margin:0px;
+}
+
+
+#productNameBought {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+#productPriceBought {
+    font-size: 20px;
+    font-weight: 550;
+    margin-bottom: 0.4rem;
+}
+
+#productNameBought, #productWeightBought, #productPriceBought {
+   
+    color: #333;
+    
+}
+
+button.closePopupButtonBought {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}

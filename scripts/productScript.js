@@ -79,6 +79,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
+    const boughtButton = document.getElementById('addToCartButton');
+    const boughtPopupBackground = document.querySelector('.boughtProductPopupBackground');
+    const closePopupButtonBought = document.querySelector('.closePopupButtonBought');
+
+    boughtButton.addEventListener('click', function() {
+        
+        boughtPopupBackground.style.display = 'flex';
+    });
+
+    closePopupButtonBought.addEventListener('click', function() {
+        
+        boughtPopupBackground.style.display = 'none';
+    });
+
 
 
     const productInfo = JSON.parse(localStorage.getItem("selectedProduct"));
@@ -99,6 +113,12 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("productNameLiked").innerText = productInfo.name;
     document.getElementById("productWeightLiked").innerText = productInfo.weight;
     document.getElementById("productPriceLiked").innerText = productInfo.price;
+
+    document.getElementById("productNameBought").innerText = productInfo.name;
+    document.getElementById("productWeightBought").innerText = productInfo.weight;
+    document.getElementById("productPriceBought").innerText = productInfo.price;
+
+
     
     fetch("../data/products.json")
         .then(response => {
@@ -132,6 +152,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (productImage) productImage.style.backgroundImage = `url('${imgPath}')`;
                     if (popupImage) popupImage.style.backgroundImage = `url('${imgPath}')`;
                     if (likedPopupImage) likedPopupImage.style.backgroundImage = `url('${imgPath}')`;
+                    
                 }
             } else {
                 descriptionElement.innerText = "Produkt nebyl nalezen v jsonu.";
