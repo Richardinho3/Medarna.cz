@@ -139,6 +139,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const productImage = document.querySelector('.productSoleImageContainer');
             const popupImage = document.querySelector('.popupContent');
             const likedPopupImage = document.querySelector('.likedPopupContentImage');
+            const boughtPopupImage = document.querySelector('.boughtPopupContentImage');
 
             if (product) {
                 if (product.description) {
@@ -152,6 +153,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (productImage) productImage.style.backgroundImage = `url('${imgPath}')`;
                     if (popupImage) popupImage.style.backgroundImage = `url('${imgPath}')`;
                     if (likedPopupImage) likedPopupImage.style.backgroundImage = `url('${imgPath}')`;
+                    if (boughtPopupImage) boughtPopupImage.style.backgroundImage = `url('${imgPath}')`;
+                    
                     
                 }
             } else {
