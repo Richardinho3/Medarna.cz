@@ -42,6 +42,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const productPicture = document.querySelector('.productSoleImageContainer');
     const popupBackground = document.querySelector('.productImagePopupBackground');
     const closePopupButton = document.querySelector('.closePopupButton');
+
+
+    const likeButton = document.querySelector('.fa-heart');
+    const likedPopupBackground = document.querySelector('.likedProductPopupBackground');
+    const closePopupButtonLiked = document.querySelector('.closePopupButtonLiked');
     
     productPicture.addEventListener('click', function() {
         popupBackground.style.display = 'flex';
@@ -52,6 +57,25 @@ document.addEventListener('DOMContentLoaded', function() {
     closePopupButton.addEventListener('click', function() {
         
         popupBackground.style.display = 'none';
+    });
+
+    emptyHeartIcon.addEventListener('click', function() {
+        likedPopupBackground.style.display = 'flex';
+        if (emptyHeartIcon.classList.contains('fa-regular')) {
+        document.getElementById("addOrRemoveText").innerText = "Odebráno z oblíbených";
+        
+            }
+        else if (emptyHeartIcon.classList.contains('fa-solid')) {
+            document.getElementById("addOrRemoveText").innerText = "Přidáno do oblíbených";
+        }
+        
+        
+        
+    });
+
+    closePopupButtonLiked.addEventListener('click', function() {
+        
+        likedPopupBackground.style.display = 'none';
     });
 
 
@@ -72,12 +96,14 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("productRatingCount").innerText = "  (" + productInfo.ratingCount + " hodnocení)";
 
     
-     
+    document.getElementById("productNameLiked").innerText = productInfo.name;
+    document.getElementById("productWeightLiked").innerText = productInfo.weight;
+    document.getElementById("productPriceLiked").innerText = productInfo.price;
     
     fetch("../data/products.json")
         .then(response => {
             if (!response.ok) {
-                throw new Error("Network response was not ok");
+                throw new Error("Network response hazi error");
             }
             return response.json();
         })
@@ -92,6 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const descriptionElement = document.getElementById("productDescription");
             const productImage = document.querySelector('.productSoleImageContainer');
             const popupImage = document.querySelector('.popupContent');
+            const likedPopupImage = document.querySelector('.likedPopupContentImage');
 
             if (product) {
                 if (product.description) {
@@ -104,12 +131,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     
                     if (productImage) productImage.style.backgroundImage = `url('${imgPath}')`;
                     if (popupImage) popupImage.style.backgroundImage = `url('${imgPath}')`;
+                    if (likedPopupImage) likedPopupImage.style.backgroundImage = `url('${imgPath}')`;
                 }
             } else {
                 descriptionElement.innerText = "Produkt nebyl nalezen v jsonu.";
             }
 
-            // Corrected star rating logic
+            
             const ratingInt = parseFloat(productInfo.rating ?? "0");
             const starElements = document.querySelectorAll('.stars i');
 
