@@ -86,6 +86,8 @@ document.addEventListener('DOMContentLoaded', function() {
     boughtButton.addEventListener('click', function() {
         
         boughtPopupBackground.style.display = 'flex';
+        const productBuyingAmount = document.querySelector('.amountInput');
+        document.getElementById("productAmountBought").innerText = "x " + productBuyingAmount.value;
     });
 
     closePopupButtonBought.addEventListener('click', function() {
@@ -118,6 +120,9 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("productWeightBought").innerText = productInfo.weight;
     document.getElementById("productPriceBought").innerText = productInfo.price;
 
+
+
+    
 
     
     fetch("../data/products.json")
