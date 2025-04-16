@@ -701,6 +701,7 @@ article.productImagePopupBackground {
     align-items: center;
     z-index: 587;
     display:none;
+    animation: fadeIn 0.2s ease-in-out;
 }
 
 section.productImagePopup {
@@ -818,8 +819,13 @@ section.likedProductPopup {
     overflow: hidden;
     display:flex;
     flex:1;
-    animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.2s ease-in-out;
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 button.closePopupButton {
     position: absolute;
