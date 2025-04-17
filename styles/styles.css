@@ -648,6 +648,10 @@ header, nav, main, footer {
     .sliderContainer {
         width:100%;
     }
+
+    .scrollBtnLeft, .scrollBtnRight {
+        display:none;
+    }
     
 }
 
