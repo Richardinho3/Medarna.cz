@@ -660,7 +660,11 @@ header, nav, main, footer {
     .scrollBtnLeft, .scrollBtnRight {
         display:none;
     }
-    .slider.product:hover{
+    .product:hover{
+        box-shadow: none;
+    }
+
+    .product button {
         box-shadow: none;
     }
     
