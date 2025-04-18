@@ -195,6 +195,9 @@ footer {
     align-items: center;
     background-color: #f6f7fb;
     box-sizing: border-box;
+    border-top-left-radius: 0.6rem; /* Ensure border radius is applied */
+    border-top-right-radius: 0.6rem; /* Ensure border radius is applied */
+    overflow: hidden; /* Ensure content respects the border radius */
 }
 
 div.footerContainer {
@@ -1008,11 +1011,10 @@ button.closePopupButtonBought {
     color: #333;
     cursor: pointer;
 }
-ul {
-    text-align: left;
-}
+
 ul > a {
     cursor: pointer;
+    text-align: left;
 }
 
 ul > a:hover {
@@ -1020,3 +1022,13 @@ ul > a:hover {
     transform: scale(1.02);
     transition: 0.1s ease;
 }
+
+main {
+    border-bottom-left-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
+}
+footer {
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+}
+
