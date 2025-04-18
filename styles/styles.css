@@ -667,6 +667,10 @@ header, nav, main, footer {
     .product button {
         box-shadow: none;
     }
+
+    *:hover {
+        box-shadow: none;
+    }
     
 }
 
