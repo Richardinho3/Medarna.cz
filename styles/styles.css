@@ -219,7 +219,7 @@ main {
 .scrollBtnLeft, .scrollBtnRight {
 position: absolute;
 top: 50%;
-transform: translateY(-50%);
+transform: translateY(-80%);
 background-color: transparent;
 color: #1E1E1E;
 border: none;
