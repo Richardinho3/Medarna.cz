@@ -1008,3 +1008,15 @@ button.closePopupButtonBought {
     color: #333;
     cursor: pointer;
 }
+ul {
+    text-align: left;
+}
+ul > a {
+    cursor: pointer;
+}
+
+ul > a:hover {
+    font-weight: 530;
+    transform: scale(1.02);
+    transition: 0.1s ease;
+}
