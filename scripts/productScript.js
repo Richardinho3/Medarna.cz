@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const productInfo = JSON.parse(localStorage.getItem("selectedProduct"));
 
     if (!productInfo) {
-        document.getElementById("productName").innerText = "Produkt nenalezen";
+        document.getElementById("productName").innerText = "Produkt nebyl nenalezen";
         return;
     }
 
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     
                 }
             } else {
-                descriptionElement.innerText = "Produkt nebyl nalezen v jsonu.";
+                descriptionElement.innerText = "Produkt nebyl nalezen v Jsonu.";
             }
 
             
