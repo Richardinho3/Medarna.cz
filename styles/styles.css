@@ -735,5 +735,27 @@ footer {
     }
 }
 
+@media (max-width : 480px) {
+    nav > ul {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    nav > ul > a {
+        width: 100%;
+        height: 50px;
+        border:none;
+    }
+    
+    nav > ul > a > li {
+        width: 100%;
+        height: 50px;
+        border:none;
+        
+    }
+    
+    
+}
+
 
 
