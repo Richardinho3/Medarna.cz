@@ -1019,6 +1019,7 @@ button.closePopupButtonBought {
 ul > a {
     cursor: pointer;
     text-align: left;
+    color:black;
 }
 
 ul > a:hover {
