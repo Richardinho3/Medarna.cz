@@ -48,14 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     
                     if (product) {
                         // Use actual product data for redirection
-                        saveProductInfo(
-                            event,
-                            product.name,
-                            product.info,
-                            product.price,
-                            product.rating,
-                            product.ratingCount
-                        );
+                        saveProductInfo(event,product.name,product.info,product.price,product.rating,product.ratingCount);
                     }
                 });
             }

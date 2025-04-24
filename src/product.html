@@ -46,10 +46,11 @@
         </a>
 
         <form action="/action_page.php">
-            <div class = "searchContainer">
+            <div class="searchContainer">
                 <i class="fa-solid fa-magnifying-glass"></i>
-
-                <input type="text" placeholder="Search.." name="search" class="">
+                <input type="text" placeholder="Search.." name="search" class="" list="productOptions" id="searchInput">
+                <datalist id="productOptions">
+                </datalist>
             </div>
         </form>
         <div class = "iconsContainer">
