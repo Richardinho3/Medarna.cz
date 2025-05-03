@@ -1,4 +1,4 @@
-// Add these functions at the start of the file
+
 function saveProductInfo(event, name, weight, price, rating, ratingCount) {
     event.preventDefault(); 
     const productInfo = { name, weight, price, rating, ratingCount};
@@ -43,8 +43,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const amountInput = document.querySelector('.amountInput');
     const decreaseBtn = document.querySelector('.amountDecrease');
+
     const increaseBtn = document.querySelector('.amountIncrease');
     
+
+
+
+
     decreaseBtn.addEventListener('click', function() {
         let value = parseInt(amountInput.value);
         if (value > 1) {
@@ -170,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch("../data/products.json")
         .then(response => {
             if (!response.ok) {
-                throw new Error("Network response hazi error");
+                throw new Error("Network response is not OK");
             }
             return response.json();
         })

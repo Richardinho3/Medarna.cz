@@ -16,18 +16,18 @@ function saveProductInfo(event, name, weight, price, rating, ratingCount) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Load product data
+    
     fetch("../data/products.json")
         .then(response => response.json())
         .then(products => {
-            // Handle product links
+            
             document.querySelectorAll('.product-link').forEach(link => {
                 link.addEventListener('click', function(event) {
                     event.preventDefault();
                     const name = this.dataset.productName;
                     const info = this.dataset.productInfo;
                     
-                    // Find product in JSON data
+                    
                     const product = products.find(p => p.name === name && p.info === info);
                     if (product) {
                         localStorage.setItem("selectedProduct", JSON.stringify({
@@ -42,10 +42,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             });
 
-            // Populate the datalist with product options
+            
             const productOptions = document.getElementById('productOptions');
             
-            // Sort products by name and info
+            
             products.sort((a, b) => {
                 let nameCompare = a.name.localeCompare(b.name);
                 if (nameCompare === 0) {
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 productOptions.appendChild(option);
             });
 
-            // Handle search input selection
+            
             const searchInput = document.getElementById('searchInput');
             if (searchInput) {
                 searchInput.addEventListener('change', function(event) {
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     const product = products.find(p => p.name === name && p.info === info);
                     
                     if (product) {
-                        // Use actual product data for redirection
+                        
                         saveProductInfo(event,product.name,product.info,product.price,product.rating,product.ratingCount);
                     }
                 });
