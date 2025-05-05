@@ -195,9 +195,9 @@ footer {
     align-items: center;
     background-color: #f6f7fb;
     box-sizing: border-box;
-    border-top-left-radius: 0.6rem; /* Ensure border radius is applied */
-    border-top-right-radius: 0.6rem; /* Ensure border radius is applied */
-    overflow: hidden; /* Ensure content respects the border radius */
+    border-top-left-radius: 0.6rem; 
+    border-top-right-radius: 0.6rem; 
+    overflow: hidden; 
 }
 
 div.footerContainer {
