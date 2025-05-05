@@ -33,6 +33,7 @@
     logiku hvězdiček jsem zkrátil s pomocí ai (aby to nebylo 5 ifů)
     https://www.freepik.com/free-vector/cute-bee-insect-animal_136484149.htm#fromView=keyword&page=1&position=7&uuid=fecbfd50-49ca-409a-8965-d9cd6a80eab1&query=Cute+Bee+Svg
     https://www.w3schools.com/html/html_links_colors.asp
+    gpt prompt: redo scrollBtnLeft and scrollBtnRight using DOM not onclick
     https://www.w3schools.com/css/css_form.asp
     https://www.w3schools.com/cssref/pr_background-attachment.php
     -->
@@ -109,7 +110,7 @@
         <div class = "popularProducts">
             <h2>Populární produkty</h2>
             <div class="sliderContainer">
-                <button class="scrollBtnLeft" onclick="scrollSlider('.slider', -1)">❮</button> 
+                <button class="scrollBtnLeft" data-slider=".slider">❮</button> 
                 
                 <div class="slider">
                     <div class="product akatovyMed">
@@ -168,13 +169,13 @@
                     </div>
                 </div>
             
-                <button class="scrollBtnRight" onclick="scrollSlider('.slider', 1)">❯</button>
+                <button class="scrollBtnRight" data-slider=".slider">❯</button>
             </div>
         </div>
         <div class = "honeyProducts">
             <h2>Medy</h2>
             <div class="sliderContainer">
-                <button class="scrollBtnLeft"  id = "scrollButtonLeft2"  onclick="scrollSlider('#slider2', -1)">❮</button>
+                <button class="scrollBtnLeft"  id = "scrollButtonLeft2"  data-slider="#slider2">❮</button>
                 
                 <div class="slider" id = "slider2">
                     <div class="product akatovyMed">
@@ -233,13 +234,13 @@
                     </div>
                 </div>
             
-                <button class="scrollBtnRight" id = "scrollButtonRight2"  onclick="scrollSlider('#slider2', 1)">❯</button>
+                <button class="scrollBtnRight" id = "scrollButtonRight2"  data-slider="#slider2">❯</button>
             </div>
         </div>
         <div class = "Accessories">
             <h2>Včelařské příslušenství</h2>
             <div class="sliderContainer">
-                <button class="scrollBtnLeft"  id = "scrollButtonLeft3" onclick="scrollSlider('#slider3', -1)">❮</button>
+                <button class="scrollBtnLeft"  id = "scrollButtonLeft3" data-slider="#slider3">❮</button>
                 
                 <div class="slider" id = "slider3">
                     <div class="product vidlickaNaOdvickovani">
@@ -298,7 +299,7 @@
                     </div>
                 </div>
             
-                <button class="scrollBtnRight" id = "scrollButtonRight3"  onclick="scrollSlider('#slider3', 1)">❯</button>
+                <button class="scrollBtnRight" id = "scrollButtonRight3"  data-slider="#slider3">❯</button>
             </div>
         </div>
     </main>

@@ -1,11 +1,25 @@
 function scrollSlider(sliderId, direction) {
-        const slider = document.querySelector(sliderId);
-        if (slider) {
-            slider.scrollBy({
-                left: direction * 1500,
-                behavior: 'smooth'
-            });
+    
+    const slider = document.querySelector(sliderId);
+    
+    
+    if (slider) {
+        
+        let scrollAmount = 0;
+        if (direction === -1) {
+            
+            scrollAmount = -1500;
+        } else {
+            
+            scrollAmount = 1500;
         }
+        
+        
+        slider.scrollBy({
+            left: scrollAmount,  
+            behavior: 'smooth'   
+        });
+    }
 }
 
 function saveProductInfo(event, name, weight, price, rating, ratingCount) {
@@ -17,6 +31,14 @@ function saveProductInfo(event, name, weight, price, rating, ratingCount) {
 
 document.addEventListener('DOMContentLoaded', function() {
     
+    document.querySelectorAll('.scrollBtnLeft, .scrollBtnRight').forEach(button => {
+        button.addEventListener('click', function() {
+            const sliderId = this.dataset.slider;
+            const direction = this.classList.contains('scrollBtnLeft') ? -1 : 1;
+            scrollSlider(sliderId, direction);
+        });
+    });
+
     fetch("../data/products.json")
         .then(response => response.json())
         .then(products => {
@@ -44,7 +66,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
             
             const productOptions = document.getElementById('productOptions');
-            
             
             products.sort((a, b) => {
                 let nameCompare = a.name.localeCompare(b.name);
